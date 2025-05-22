@@ -1,0 +1,23 @@
+# dependencies
+node_modules/
+
+# production
+dist/
+build/
+
+# local env files
+.env
+.env.*.local
+
+# vite cache
+.vite/
+
+# typescript
+*.tsbuildinfo
+
+# logs
+npm-debug.log*
+
+# editor settings
+.vscode/
+.idea/

@@ -1,0 +1,1 @@
+Site to display information about myself and projects. Also features some connections to other platforms. Made with typescript and tailwind.

@@ -1,6 +1,6 @@
 function Navbar() {
   return (
-    <nav className="bg-transparent border-gray-200 fixed w-full z-50 p-3.5 backdrop-blur-md shadow-xl top-0 left-0">
+    <nav className=" bg-spirit/75 fixed w-full z-50 p-3.5 backdrop-blur-md shadow-xl top-0 left-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           <div className="cursor-pointer">

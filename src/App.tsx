@@ -6,7 +6,7 @@ function App() {
       <Navbar/>
       <main className="min-h-[80vh] xl:my-28 mt-36 pt-16">
         <section className="flex flex-row items-center justify-between px-24">
-          <div className="px-24">
+          <div className="px-12">
             <h1 className="text-6xl font-bold">Hello I'm</h1>
             <h1 className="text-6xl mb-6 font-bold text-amber-500">Erik Enriquez</h1>
             <p className="text-xl mb-9"> Currently a student, I’m especially intrested in GPUs, systems programming, and 
@@ -32,10 +32,41 @@ function App() {
             </div>
           </div>
 
-          <div className="px-24">
+          <div className="px-12">
             <img src="../public/simulate-guy.png" className="mb-9" width="1250vh" height="1250vh"/>
           </div>
  
+        </section>
+
+        <section className="flex flex-row items-center justify-around gap-24 px-36 mb-18 mt-16">
+
+          <div className="flex flex-row items-center gap-6 justify-center py-2 px-4 rounded-md cursor-pointer transition delay-50 duration-100 hover:-translate-y-2 hover:bg-amber-500 hover:scale-110">
+            <h1 className="text-5xl font-bold">4</h1>
+            <div className="flex flex-column">
+              <p className="text-xl">GitHub <br/> Projects</p>
+            </div>
+          </div>
+
+          <div className="flex flex-row items-center gap-6 justify-center py-2 px-4 rounded-md cursor-pointer transition delay-50 duration-100 hover:-translate-y-2 hover:bg-amber-500 hover:scale-110">
+            <h1 className="text-5xl font-bold">15</h1>
+            <div className="flex flex-column">
+              <p className="text-xl">Technical <br/> Skills</p>
+            </div>
+          </div>
+
+          <div className="flex flex-row items-center gap-6 justify-center py-2 px-4 rounded-md cursor-pointer transition delay-50 duration-100 hover:-translate-y-2 hover:bg-amber-500 hover:scale-110">
+            <h1 className="text-5xl font-bold">35</h1>
+            <div className="flex flex-column">
+              <p className="text-xl">Video <br/> Clips</p>
+            </div>
+          </div>
+
+          <div className="flex flex-row items-center gap-6 justify-center py-2 px-4 rounded-md cursor-pointer transition delay-50 duration-100 hover:-translate-y-2 hover:bg-amber-500 hover:scale-110">
+            <h1 className="text-5xl font-bold">150</h1>
+            <div className="flex flex-column">
+              <p className="text-xl">Leetcode <br/> Solved</p>
+            </div>
+          </div>
         </section>
       </main>
     </div>

@@ -4,7 +4,7 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           <div className="cursor-pointer">
-            <img src="../../public/body.png" width="50vh" height="50vh" />
+            <img src="body.png" width="50vh" height="50vh" />
           </div>
 
           <div className="space-x-6 hidden md:flex">

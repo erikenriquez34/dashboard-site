@@ -1,72 +1,69 @@
-import Navbar from './components/Navbar'
+import Navbar from './components/about/Navbar.tsx'
+import Bubble from './components/about/Bubble.tsx'
+import Stat from './components/about/Stat.tsx'
 
 function App() {
   return (
     <div className="">
       <Navbar/>
-      <main className="min-h-[80vh] xl:my-28 mt-36 pt-16">
+      <main className="min-h-[80vh] xl:mt-28 mt-36 pt-12">
         <section className="flex flex-row items-center justify-between px-24">
           <div className="px-12">
             <h1 className="text-6xl font-bold">Hello I'm</h1>
             <h1 className="text-6xl mb-6 font-bold text-amber-500">Erik Enriquez</h1>
-            <p className="text-xl mb-9"> Currently a student, I’m especially intrested in GPUs, systems programming, and 
-              performance engineering. I like working with Linux, and like enjoy coding in
-              Java and C++. </p>
+            <p className="text-xl mb-9"> Currently a student, I’m especially intrested in GPUs, systems 
+              programming, and performance engineering. I like working with Linux, and like enjoy coding 
+              in Java and C++. </p>
             <div className="flex gap-4">
-              <a className="bg-gray-50 w-10 h-10 rounded-4xl cursor-pointer flex items-center justify-center hover:scale-110" 
-              href="https://github.com/erikenriquez34" target="_blank">
-                <img src="github.png" width="25vh" height="25vh"/>
-              </a>
-              <a className="bg-gray-50 w-10 h-10 rounded-4xl cursor-pointer flex items-center justify-center hover:scale-110"
-              href="https://www.linkedin.com/in/erikenriquez34/" target="_blank">
-                <img src="linkedin.png" width="25vh" height="25vh"/>
-              </a>
-              <a className="bg-gray-50 w-10 h-10 rounded-4xl cursor-pointer flex items-center justify-center hover:scale-110"
-              href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=erikenriquez34@gmail.com" target="_blank">
-                <img src="gmail.png" width="25vh" height="25vh"/>
-              </a>
-              <a className="bg-gray-50 w-10 h-10 rounded-4xl cursor-pointer flex items-center justify-center hover:scale-110"
-              href="https://leetcode.com/u/erikenriquez34/" target="_blank">
-                <img src="leetcode.png" width="25vh" height="25vh"/>
-              </a>
+              <Bubble link="https://github.com/erikenriquez34" icon="github.png"/>
+              <Bubble link="https://www.linkedin.com/in/erikenriquez34/" icon="linkedin.png"/>
+              <Bubble link="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=erikenriquez34@gmail.com" icon="gmail.png"/>
+              <Bubble link="https://leetcode.com/u/erikenriquez34/" icon ="leetcode.png"/>
             </div>
           </div>
 
           <div className="px-12">
-            <img src="../public/simulate-guy.png" className="mb-9" width="1250vh" height="1250vh"/>
+            <img src="simulate-guy.png" className="mb-9" width="1250vh" height="1250vh" alt="computer-guy"/>
           </div>
- 
         </section>
 
         <section className="flex flex-row items-center justify-around gap-24 px-36 mb-18 mt-16">
+          <Stat number={4} top="Github" bot="Projects"/>
+          <Stat number={15} top="Technical" bot="Skills"/>
+          <Stat number={35} top="Video" bot="Clips"/>
+          <Stat number={150} top="Leetcode" bot="Solved"/>
+        </section>
 
-          <div className="flex flex-row items-center gap-6 justify-center py-2 px-4 rounded-md cursor-pointer transition delay-50 duration-100 hover:-translate-y-2 hover:bg-amber-500 hover:scale-110">
-            <h1 className="text-5xl font-bold">4</h1>
-            <div className="flex flex-column">
-              <p className="text-xl">GitHub <br/> Projects</p>
-            </div>
+        <section className="flex flex-row items-center justify-between px-24 pt-14 mb-24">
+          <div className="px-24 text-center">
+            <h1 className="text-5xl font-bold mb-8">
+              The <span className="text-amber-500">Journey</span> So Far
+            </h1>
+
+            <p className="text-left text-xl">
+              I’m currently pursuing a Bachelor of Science in Computer Science at the
+              Rochester, where I’ve been exploring everything from low-level systems to high-level 
+              design.<br/><br/>
+
+              Outside of class, I enjoy gaming with friends (you can check out some of
+              my highlights on the site) 
+              and keeping up with the latest in tech. My academic interests lean toward GPUs and computer 
+              architecture, as it feels reasonable to understand performance from the hardware up.<br/><br/>
+
+              When I’m not coding or gaming, I like to keep an eye on the stock market and experiment 
+              with smart home tech. Whether it’s optimizing code or my living space, I love finding 
+              practical and efficient solutions.<br/><br/>
+            </p>
+
           </div>
 
-          <div className="flex flex-row items-center gap-6 justify-center py-2 px-4 rounded-md cursor-pointer transition delay-50 duration-100 hover:-translate-y-2 hover:bg-amber-500 hover:scale-110">
-            <h1 className="text-5xl font-bold">15</h1>
-            <div className="flex flex-column">
-              <p className="text-xl">Technical <br/> Skills</p>
-            </div>
+          <div>
+            <img src="erikpic.png" width="1000vh" height="1000vh" className="rounded-full aspect-square" alt="erik-pic"/>
           </div>
+        </section>
 
-          <div className="flex flex-row items-center gap-6 justify-center py-2 px-4 rounded-md cursor-pointer transition delay-50 duration-100 hover:-translate-y-2 hover:bg-amber-500 hover:scale-110">
-            <h1 className="text-5xl font-bold">35</h1>
-            <div className="flex flex-column">
-              <p className="text-xl">Video <br/> Clips</p>
-            </div>
-          </div>
+        <section className="py-8 bg-darker-spirit">
 
-          <div className="flex flex-row items-center gap-6 justify-center py-2 px-4 rounded-md cursor-pointer transition delay-50 duration-100 hover:-translate-y-2 hover:bg-amber-500 hover:scale-110">
-            <h1 className="text-5xl font-bold">150</h1>
-            <div className="flex flex-column">
-              <p className="text-xl">Leetcode <br/> Solved</p>
-            </div>
-          </div>
         </section>
       </main>
     </div>

@@ -4,11 +4,11 @@ import Stat from './components/about/Stat.tsx'
 
 function App() {
   return (
-    <div className="">
+    <>
       <Navbar/>
-      <main className="min-h-[80vh] xl:mt-28 mt-36 pt-12">
-        <section className="flex flex-row items-center justify-between px-24">
-          <div className="px-12">
+      <main className="flex flex-col min-h-screen xl:mt-28 mt-36 pt-12 items-center">
+        <section className="flex flex-col xl:flex-row items-center justify-around px-24 w-fit min-2xl:w-7xl">
+          <div className="px-12 w-[55%]">
             <h1 className="text-6xl font-bold">Hello I'm</h1>
             <h1 className="text-6xl mb-6 font-bold text-amber-500">Erik Enriquez</h1>
             <p className="text-xl mb-9"> Currently a student, I’m especially intrested in GPUs, systems 
@@ -21,21 +21,24 @@ function App() {
               <Bubble link="https://leetcode.com/u/erikenriquez34/" icon ="leetcode.png"/>
             </div>
           </div>
-
-          <div className="px-12">
-            <img src="simulate-guy.png" className="mb-9" width="1250vh" height="1250vh" alt="computer-guy"/>
+          <div className="justify-center px-12 w-[45%] hidden xl:flex">
+            <img 
+            src="simulate-guy.png" 
+            className="mb-9 w-fit h-fit" 
+            alt="computer-guy"
+            />
           </div>
         </section>
 
-        <section className="flex flex-row items-center justify-around gap-24 px-36 mb-18 mt-16">
+        <section className="flex flex-wrap items-center justify-around gap-24 px-36 mb-18 mt-16">
           <Stat number={4} top="Github" bot="Projects"/>
           <Stat number={15} top="Technical" bot="Skills"/>
           <Stat number={35} top="Video" bot="Clips"/>
           <Stat number={150} top="Leetcode" bot="Solved"/>
         </section>
 
-        <section className="flex flex-row items-center justify-between px-24 pt-14 mb-24">
-          <div className="px-24 text-center">
+        <section className="flex flex-col xl:flex-row items-center justify-around px-24 pt-14 mb-24 w-fit min-2xl:w-7xl">
+          <div className="px-24 text-center w-[95%]">
             <h1 className="text-5xl font-bold mb-8">
               The <span className="text-amber-500">Journey</span> So Far
             </h1>
@@ -54,20 +57,21 @@ function App() {
               with smart home tech. Whether it’s optimizing code or my living space, I love finding 
               practical and efficient solutions.<br/><br/>
             </p>
-
           </div>
-
-          <div>
-            <img src="erikpic.png" width="1000vh" height="1000vh" className="rounded-full aspect-square" alt="erik-pic"/>
+          <div className="flex justify-center px-12 pt-12 w-[40%]">
+            <img 
+            src="erikpic.png" 
+            className="mb-9 w-fit h-fit rounded-full aspect-square" 
+            alt="erik-pic"
+            />
           </div>
-        </section>
-
-        <section className="py-6 px-5 bg-darker-spirit text-center flex">
-                <div className="text-lg w-[33%] text-left">Copyright © 2025 EE</div>
-                <div className="text-lg w-[33%]">erikenriquez34@gmail.com</div>
         </section>
       </main>
-    </div>
+      <footer className="py-8 px-5 bg-darker-spirit text-center flex w-full">
+        <div className="text-lg w-[33%] text-left">Copyright © 2025 EE</div>
+        <div className="text-lg w-[33%]">erikenriquez34@gmail.com</div>
+      </footer>
+    </>
   )
 }
 

@@ -62,8 +62,9 @@ function App() {
           </div>
         </section>
 
-        <section className="py-8 bg-darker-spirit">
-
+        <section className="py-6 px-5 bg-darker-spirit text-center flex">
+                <div className="text-lg w-[33%] text-left">Copyright © 2025 EE</div>
+                <div className="text-lg w-[33%]">erikenriquez34@gmail.com</div>
         </section>
       </main>
     </div>

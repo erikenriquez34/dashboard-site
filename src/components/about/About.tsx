@@ -1,3 +1,4 @@
+import {NavLink} from "react-router-dom";
 import Bubble from './Bubble.tsx'
 import Stat from './Stat.tsx'
 
@@ -29,10 +30,10 @@ function About() {
         </section>
 
         <section className="flex flex-wrap items-center justify-around gap-24 px-36 mb-18 mt-16">
-          <Stat number={4} top="Github" bot="Projects"/>
-          <Stat number={15} top="Technical" bot="Skills"/>
-          <Stat number={35} top="Video" bot="Clips"/>
-          <Stat number={150} top="Leetcode" bot="Solved"/>
+          <NavLink to="/projects"><Stat number={4} top="Github" bot="Projects"/></NavLink>
+          <NavLink to="/projects"><Stat number={15} top="Technical" bot="Skills"/></NavLink>
+          <NavLink to="/media"><Stat number={35} top="Video" bot="Clips"/></NavLink>
+          <NavLink to="https://leetcode.com/u/erikenriquez34/"><Stat number={150} top="Leetcode" bot="Solved"/></NavLink>
         </section>
 
         <section className="flex flex-col xl:flex-row items-center justify-around px-24 pt-14 mb-24 w-fit min-2xl:w-7xl">

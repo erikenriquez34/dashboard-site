@@ -3,11 +3,11 @@ import { useEffect, useState } from "react";
 function getBadge(lanyard: any) {
   return (
     lanyard.active_on_discord_desktop || lanyard.active_on_discord_mobile ? (
-      <span className="absolute bottom-1 right-1 w-7 h-7 bg-discord-green border-5 border-discord-activity rounded-full"></span>
+      <span className="absolute bottom-0.5 right-0.5 w-6 h-6 bg-discord-green border-5 border-discord-activity rounded-full"></span>
       ) : (
         <>
-          <span className="absolute bottom-1 right-1 w-7 h-7 bg-neutral-500 border-5 border-discord-activity rounded-full"></span>
-          <span className="absolute bottom-3.25 right-3.25 w-2.5 h-2.5 bg-discord-activity rounded-full"></span>
+          <span className="absolute bottom-0.5 right-0.5 w-7 h-7 bg-neutral-500 border-5 border-discord-activity rounded-full"></span>
+          <span className="absolute bottom-2.75 right-2.75 w-2.5 h-2.5 bg-discord-activity rounded-full"></span>
         </>
       )
   );
@@ -36,7 +36,7 @@ function getDesc(lanyard: any) {
   return (
     <div className="text-white">
       <h2 className="font-semibold text-md">Playing {activity.name}</h2>
-      <h3 className="text-xs">{activity.details}</h3>
+      <h3 className="text-xs font-medium">{activity.details}</h3>
       <h3 className="font-bold text-xs text-discord-green pt-0.5">{activity.state}</h3>
     </div>
   )
@@ -55,20 +55,23 @@ function DiscordCard() {
 
   return (
     <>
-      <div className="relative">
-        <a href={`https://discord.com/users/${lanyard.discord_user.id}`} target="_blank" rel="noopener noreferrer">
-          <img src={`https://cdn.discordapp.com/avatars/${lanyard.discord_user.id}/${lanyard.discord_user.avatar}.png`} 
-          alt="Discord Avatar" 
-          className="rounded-full w-24 h-24 overflow-hidden border-7 border-discord-activity shadow-lg cursor-pointer"
-          title="View Discord Profile"
-          />
+      <div className="flex items-center">
+        <div className="relative mb-2">
+            <img src={`https://cdn.discordapp.com/avatars/${lanyard.discord_user.id}/${lanyard.discord_user.avatar}.png`} 
+            alt="Discord Avatar" 
+            className="rounded-full w-18 h-18 overflow-hidden border-6 border-discord-activity shadow-lg"
+            />
+          {getBadge(lanyard)}
+        </div>
+
+        <a href={`https://discord.com/users/${lanyard.discord_user.id}`} target="_blank" title="View Discord Profile">
+          <p className="ml-2 mt-1 text-3xl font-bold hover:bg-amber-500">SirrDrip#NA1</p>
         </a>
-        {getBadge(lanyard)}
       </div>
 
-      <div className="ml-4 bg-discord-activity p-2 h-23 w-70 rounded-lg">
+      <div className="flex bg-discord-activity p-2 h-22.5 w-75 rounded-lg items-center">
         {lanyard.activities.length ? (
-            <div className="mt-2 flex items-center gap-3">
+            <div className="flex items-center gap-3">
                 {getImage(lanyard)}
                 {getDesc(lanyard)}
             </div>

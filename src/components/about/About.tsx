@@ -5,8 +5,8 @@ import Stat from './Stat.tsx'
 function About() {
   return (
     <>
-      <main className="flex flex-col min-h-screen xl:mt-28 mt-36 pt-12 items-center">
-        <section className="flex flex-col xl:flex-row items-center justify-around px-24 w-fit min-2xl:w-7xl">
+      <main className="flex flex-col min-h-screen mt-22 pt-12 items-center">
+        <section className="flex flex-col xl:flex-row items-center justify-around px-24 py-12 w-fit min-2xl:w-7xl">
           <div className="px-12 w-[55%]">
             <h1 className="text-6xl font-bold">Hello I'm</h1>
             <h1 className="text-6xl mb-6 font-bold text-amber-500">Erik Enriquez</h1>

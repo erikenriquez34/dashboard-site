@@ -66,10 +66,6 @@ function About() {
           </div>
         </section>
       </main>
-      <footer className="py-8 px-5 bg-darker-spirit text-center flex w-full">
-        <div className="text-lg w-[33%] text-left">Copyright © 2025 EE</div>
-        <div className="text-lg w-[33%]">erikenriquez34@gmail.com</div>
-      </footer>
     </>
   );
 }

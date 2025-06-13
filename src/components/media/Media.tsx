@@ -50,12 +50,12 @@ function Media() {
         </div>
       </main>
 
-      <main className="text-white flex items-center justify-center flex-col px-6 z-20">
+      <main className="text-white flex items-center justify-center flex-col px-6 mb-15 z-20">
         <section className="flex flex-col min-2xl:w-[1200px] min-w-5xl items-center">
           <div className="flex flex-row justify-between mb-1 items-center  w-3/4">
             <h2 className="text-3xl font-bold">Media Highlights</h2>
             <select value={selectedGame} onChange={(e) => setSelectedGame(e.target.value)}
-              className="p-2 rounded bg-discord-activity font-bold"
+              className="p-2 mr-5 rounded bg-discord-activity font-bold"
               >
               <option value="All">All Games</option>
               <option value="league">League of Legends</option>
@@ -68,16 +68,11 @@ function Media() {
 
           <div className="p-10 flex flex-wrap justify-center gap-5">
             {filteredClips.map((video) => (
-              <Clip key={video.videoId} videoId={video.videoId} title={video.title} game={video.game} date={video.date} />
+              <Clip key={video.videoId} videoId={video.videoId} title={video.title} game={video.game} date={video.date} tag={video.tag}/>
             ))}
           </div>
         </section>
       </main>
-
-      <footer className="py-8 px-5 bg-darker-spirit text-center flex w-full">
-        <div className="text-lg w-[33%] text-left">Copyright © 2025 EE</div>
-        <div className="text-lg w-[33%]">erikenriquez34@gmail.com</div>
-      </footer>
     </>
   );
 }

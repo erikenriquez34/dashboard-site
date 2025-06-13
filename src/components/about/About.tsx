@@ -14,10 +14,10 @@ function About() {
               programming, and performance engineering. I like working with Linux, and like enjoy coding 
               in Java and C++. </p>
             <div className="flex gap-4">
-              <Bubble link="https://github.com/erikenriquez34" icon="github.png"/>
-              <Bubble link="https://www.linkedin.com/in/erikenriquez34/" icon="linkedin.png"/>
-              <Bubble link="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=erikenriquez34@gmail.com" icon="gmail.png"/>
-              <Bubble link="https://leetcode.com/u/erikenriquez34/" icon ="leetcode.png"/>
+              <Bubble link="https://github.com/erikenriquez34" icon="/icons/github.png"/>
+              <Bubble link="https://www.linkedin.com/in/erikenriquez34/" icon="/icons/linkedin.png"/>
+              <Bubble link="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=erikenriquez34@gmail.com" icon="/icons/gmail.png"/>
+              <Bubble link="https://leetcode.com/u/erikenriquez34/" icon="/icons/leetcode.png"/>
             </div>
           </div>
           <div className="justify-center px-12 w-[45%] hidden xl:flex">

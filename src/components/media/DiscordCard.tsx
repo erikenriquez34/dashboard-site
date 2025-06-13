@@ -69,19 +69,21 @@ function DiscordCard() {
         </a>
       </div>
 
-      <div className="flex bg-discord-activity p-2 h-22.5 w-75 rounded-lg items-center">
-        {lanyard.activities.length ? (
-            <div className="flex items-center gap-3">
-                {getImage(lanyard)}
-                {getDesc(lanyard)}
-            </div>
-          ) : (
-            <div className="mt-3 flex items-center gap-1 flex-col justify-around">
-              <h2 className="font-semibold text-md text-red-500">No activity detected.</h2>
-              <h2 className="font-semibold text-sm">Hopefully enjoying the outdoors!</h2>
-            </div>  
-          )}
-      </div>
+      {lanyard.activities.length ? (
+        <div className="flex bg-discord-activity p-2 h-22.5 w-75 rounded-lg items-center">
+          <div className="flex items-center gap-3">
+            {getImage(lanyard)}
+            {getDesc(lanyard)}
+          </div>
+        </div>
+      ) : (
+        <div className="flex bg-discord-activity p-2 h-22.5 w-75 rounded-lg items-center justify-center">
+          <div className="flex items-center gap-1 flex-col">
+            <h2 className="font-semibold text-md text-red-500">No activity detected.</h2>
+            <h2 className="font-semibold text-sm mb-3">Hopefully enjoying the outdoors!</h2>
+          </div>
+        </div>
+      )}
     </>
   );
 }

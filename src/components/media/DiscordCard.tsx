@@ -51,7 +51,32 @@ function DiscordCard() {
       .then(res => res.json())
       .then(data => setlanyard(data.data));
   }, []);
-  if (!lanyard) return;
+
+  if (!lanyard) {
+    return (
+      <div className="flex flex-col gap-3">
+        <div className="flex items-center animate-pulse">
+          <div className="relative mb-2">
+            <div className="rounded-full w-18 h-18 bg-discord-dark" />
+          </div>
+          <div className="ml-2 mt-1">
+            <div className="h-6 w-36 bg-discord-dark rounded"></div>
+          </div>
+        </div>
+
+        <div className="flex bg-discord-activity p-2 h-22.5 w-75 rounded-lg items-center animate-pulse">
+          <div className="flex items-center gap-3">
+            <div className="w-16 h-16 bg-discord-dark rounded-md"></div>
+            <div className="space-y-2">
+              <div className="h-4 w-32 bg-discord-dark rounded"></div>
+              <div className="h-3 w-28 bg-discord-dark rounded"></div>
+              <div className="h-3 w-36 bg-discord-dark rounded"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <>

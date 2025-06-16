@@ -50,7 +50,7 @@ function Media() {
         </div>
       </main>
 
-      <main className="text-white flex items-center justify-center flex-col px-6 mb-15 z-20">
+      <main className="relative min-xl:bottom-20 min-md:bottom-10 text-white flex items-center justify-center flex-col px-6 mb-15 z-20">
         <section className="flex flex-col min-2xl:w-[1200px] min-w-5xl items-center">
           <div className="flex flex-row justify-between mb-1 items-center  w-3/4">
             <h2 className="text-3xl font-bold">Media Highlights</h2>

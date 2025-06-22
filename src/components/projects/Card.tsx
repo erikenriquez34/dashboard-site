@@ -13,7 +13,7 @@ function Card(props: Props) {
       <img
         src={props.image}
         alt={`${props.name}`}
-        className="w-full h-48 object-cover"
+        className="w-full h-48 object-cover object-center"
         />
       <div className="p-6">
         <h3 className="text-2xl font-semibold mb-2">{props.name}</h3>

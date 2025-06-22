@@ -1,0 +1,16 @@
+[
+ {
+  "name": "Threaded Matrix",
+  "description": "A C++ multithreaded matrix multiplication experiment with cache analysis.",
+  "image": "thumbnails/threaded-matrix.png",
+  "tags": ["C++", "Multithreading", "Architecture"],
+  "repo": "https://github.com/erikenriquez34/threaded-matrix"
+ },
+ {
+  "name": "I Am Not A Robot",
+  "description": "A web game with integrates visual recognition and speech analysis to stump humans and AI.",
+  "image": "thumbnails/not-robot.png",
+  "tags": ["Python", "Teraform", "Hackathon"],
+  "repo": "https://github.com/NicoBobBison/captcha-game"
+ }
+]

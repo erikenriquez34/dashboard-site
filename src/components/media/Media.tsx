@@ -30,7 +30,7 @@ function Media() {
                 />
                 <div>
                   <p className="font-semibold text-3xl">Emerald 4</p>
-                  <p className="font-semibold text-xl">46 LP</p>
+                  <p className="font-semibold text-xl">16 LP</p>
                 </div>
               </div>
 

@@ -19,6 +19,8 @@ function getImage(lanyard: any) {
   let imageUrl = "";
   if (activity.name === "Spotify" && activity.assets?.large_image.startsWith("spotify:")) {
     imageUrl = `https://i.scdn.co/image/${activity.assets?.large_image.replace("spotify:", "")}`;
+  } else if (activity.details.includes("Meta Quest")) {
+    imageUrl = './icons/meta-quest.png';
   } else if (activity.assets?.large_image) {
     imageUrl = `https://cdn.discordapp.com/app-assets/${activity.application_id}/${activity.assets?.large_image}.png`;
   } else if (activity.assets?.small_image) {
@@ -34,10 +36,10 @@ function getDesc(lanyard: any) {
   const activity = lanyard.activities[0];
 
   return (
-    <div className="text-white">
+    <div className="text-white overflow-hidden">
       <h2 className="font-semibold text-md">Playing {activity.name}</h2>
       <h3 className="text-xs font-medium">{activity.details}</h3>
-      <h3 className="font-bold text-xs text-discord-green pt-0.5">{activity.state}</h3>
+      <h3 className="font-bold text-xs text-discord-green pt-0.5 truncate overflow-clip whitespace-nowrap">{activity.state}</h3>
     </div>
   )
 }

@@ -24,7 +24,7 @@ function Media() {
             <div className="mx-2">
               <div className="flex items-center">
                 <img
-                  src="/emerald-rank.png"
+                  src="emerald-rank.png"
                   alt="emerald-rank"
                   className="shadow-md w-28 h-28 mx-4"
                 />

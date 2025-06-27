@@ -1,7 +1,12 @@
+import { useEffect } from "react";
 import Card from "./Card"
 import projects from '../../data/projects.json';
 
 function Projects() {
+  useEffect(() => {
+    document.title = "Erik Enriquez | Projects";
+  }, []);
+
   return (
     <>
       <main className="flex flex-col min-h-screen mt-16 pt-12 items-center">

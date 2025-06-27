@@ -1,8 +1,13 @@
-import {NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { useEffect } from "react";
 import Bubble from './Bubble.tsx'
 import Stat from './Stat.tsx'
 
 function About() {
+  useEffect(() => {
+    document.title = "Erik Enriquez | About";
+  }, []);
+  
   return (
     <>
       <main className="flex flex-col min-h-screen mt-22 pt-12 items-center">

@@ -1,9 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import clips from '../../data/clips.json';
 import DiscordCard from "./DiscordCard";
 import Clip from "./Clip";
 
 function Media() {
+  useEffect(() => {
+    document.title = "Erik Enriquez | Media";
+  }, []);
+
   const [selectedGame, setSelectedGame] = useState("All");
 
   const filteredClips = selectedGame === "All"
@@ -12,7 +16,7 @@ function Media() {
 
     return (
     <>
-      <main className="relative h-screen w-full bg-cover" style={{ backgroundImage: "url('/bard-mountain.png')" }}> 
+      <main className="relative h-screen w-full bg-cover" style={{ backgroundImage: "url('bard-mountain.png')" }}> 
         <figure className="absolute inset-0 bg-gradient-to-b from-transparent to-spirit z-10"/>
 
         <div className="relative z-20 h-full flex items-center justify-center flex-col px-12 py-26">

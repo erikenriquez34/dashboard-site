@@ -38,7 +38,7 @@ function ContactModal(props:Props) {
 
   return (
     <div className="fixed inset-0 z-50 bg-black/40 flex items-center justify-center" onClick={props.onClose}>
-      <div className="bg-purple-200 p-8 rounded-xl w-full max-w-xl shadow-lg relative" 
+      <div className="bg-discord-dark p-8 rounded-xl w-full max-w-xl shadow-lg relative" 
         onClick={(e) => e.stopPropagation()}>
 
         {sent ? (
@@ -69,8 +69,8 @@ function ContactModal(props:Props) {
         )}
 
         <button onClick={() => {setSent(false); props.onClose();}}
-          className="absolute -top-2 -right-2 w-8 h-8 bg-red-400 text-white rounded-full flex items-center 
-          justify-center text-lg font-bold hover:bg-red-500 hover:scale-105 transition hover:cursor-pointer duration-200"
+          className="absolute -top-2 -right-2 w-8 h-8 bg-red-500 text-white rounded-full flex items-center 
+          justify-center text-lg font-bold hover:bg-red-600 transition hover:cursor-pointer duration-200"
           ria-label="Close">
           &times;
         </button>

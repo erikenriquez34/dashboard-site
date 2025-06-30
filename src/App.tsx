@@ -3,11 +3,13 @@ import Navbar from './components/Navbar.tsx'
 import About from './components/about/About.tsx'
 import Media from './components/media/Media.tsx'
 import Projects from './components/projects/Projects.tsx'
+import ScrollToTop from "./components/ResetScroll.tsx";
 
 function App() {
   return (
     <Router>
       <Navbar/>
+      <ScrollToTop/>
       <Routes>
         <Route path="/" element={<About/>}/>
         <Route path="/media" element={<Media/>}/>

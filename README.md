@@ -1,4 +1,4 @@
-## Dashboard-Site
+## Dashboard Site
 
 This is my personal portfolio website, built to showcase my projects, interests, and real-time integrations like Discord status. Built using React, TypeScript, and Tailwind CSS. 
 

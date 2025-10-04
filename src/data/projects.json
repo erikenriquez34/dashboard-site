@@ -1,12 +1,5 @@
 [
  {
-  "name": "Threaded Matrix",
-  "description": "A C++ multithreaded matrix multiplication experiment with cache analysis.",
-  "image": "thumbnails/threaded-matrix.png",
-  "tags": ["C++", "Multithreading", "Architecture"],
-  "repo": "https://github.com/erikenriquez34/threaded-matrix"
- },
- {
   "name": "I Am Not A Robot",
   "description": "A web game with integrates visual recognition and speech analysis to stump humans and AI.",
   "image": "thumbnails/not-robot.png",
@@ -14,10 +7,24 @@
   "repo": "https://github.com/NicoBobBison/captcha-game"
  },
  {
+  "name": "Simple Shell",
+  "description": "Terminal written in C implementing features like job control, pipes, and signal handling.",
+  "image": "thumbnails/shell-diagram.png",
+  "tags": ["C", "Systems", "Linux"],
+  "repo": "https://github.com/erikenriquez34/simple-shell"
+},
+{
   "name": "New York Streetmap",
   "description": "Navigation program using real coordinates in New York state using Dijkstra's algorithm.",
   "image": "thumbnails/ny-streetmap.png",
   "tags": ["Java", "Graphics", "Data Structures"],
   "repo": "https://github.com/erikenriquez34/ny-streetmap"
+ },
+{
+  "name": "Threaded Matrix",
+  "description": "A C++ multithreaded matrix multiplication experiment with cache analysis.",
+  "image": "thumbnails/threaded-matrix.png",
+  "tags": ["C++", "Multithreading", "Architecture"],
+  "repo": "https://github.com/erikenriquez34/threaded-matrix"
  }
 ]

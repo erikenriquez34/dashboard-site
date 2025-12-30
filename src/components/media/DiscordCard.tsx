@@ -17,10 +17,17 @@ function getImage(lanyard: any) {
   const activity = lanyard.activities[0];
 
   let imageUrl = "";
+  //spotify
   if (activity.name === "Spotify" && activity.assets?.large_image.startsWith("spotify:")) {
     imageUrl = `https://i.scdn.co/image/${activity.assets?.large_image.replace("spotify:", "")}`;
+  //ps4
+  } else if (activity.platform === "ps4" && activity.assets?.small_image) {
+    const idx = activity.assets.small_image.indexOf("image.api");
+    imageUrl = "https://" + activity.assets.small_image.slice(idx);
+  //meta quest
   } else if (activity.details.includes("Meta Quest")) {
     imageUrl = './icons/meta-quest.png';
+  //pc games
   } else if (activity.assets?.large_image) {
     imageUrl = `https://cdn.discordapp.com/app-assets/${activity.application_id}/${activity.assets?.large_image}.png`;
   } else if (activity.assets?.small_image) {

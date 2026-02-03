@@ -7,6 +7,13 @@
   "repo": "https://github.com/NicoBobBison/captcha-game"
  },
  {
+  "name": "Discord Clipper",
+  "description": "Video compression tool with custom transforms for lightweight, Discord-friendly uploads.",
+  "image": "thumbnails/discord-clipper.png",
+  "tags": ["Python", "Multiprocessing", "Video"],
+  "repo": "https://github.com/erikenriquez34/discord-clipper"
+},
+ {
   "name": "Simple Shell",
   "description": "Terminal written in C implementing features like job control, pipes, and signal handling.",
   "image": "thumbnails/shell-diagram.png",
@@ -20,7 +27,7 @@
   "tags": ["Java", "Graphics", "Data Structures"],
   "repo": "https://github.com/erikenriquez34/ny-streetmap"
  },
-{
+ {
   "name": "Threaded Matrix",
   "description": "A C++ multithreaded matrix multiplication experiment with cache analysis.",
   "image": "thumbnails/threaded-matrix.png",

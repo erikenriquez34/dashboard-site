@@ -15,9 +15,9 @@ function About() {
           <div className="px-12 w-[55%]">
             <h1 className="text-6xl font-bold">Hello I'm</h1>
             <h1 className="text-6xl mb-6 font-bold text-amber-500">Erik Enriquez</h1>
-            <p className="text-xl mb-9"> Currently a student, I’m especially intrested in GPUs, systems 
-              programming, and performance engineering. I like working with Linux, and like enjoy coding 
-              in Java and C++. </p>
+            <p className="text-xl mb-9"> Computer science student interested in systems and 
+              software engineering. I enjoy learning about computer architecture and system 
+              design. Experienced with Java and C++. </p>
             <div className="flex gap-4">
               <Bubble link="https://github.com/erikenriquez34" icon="icons/github.png"/>
               <Bubble link="https://www.linkedin.com/in/erikenriquez34/" icon="icons/linkedin.png"/>
@@ -35,10 +35,10 @@ function About() {
         </section>
 
         <section className="flex flex-wrap items-center justify-around gap-24 px-36 mb-18 mt-16">
-          <NavLink to="/projects"><Stat number={4} top="Github" bot="Projects"/></NavLink>
+          <NavLink to="/projects"><Stat number={5} top="Github" bot="Projects"/></NavLink>
           <NavLink to="/projects"><Stat number={15} top="Technical" bot="Skills"/></NavLink>
-          <NavLink to="/media"><Stat number={40} top="Video" bot="Clips"/></NavLink>
-          <NavLink to="https://leetcode.com/u/erikenriquez34/"><Stat number={200} top="Leetcode" bot="Solved"/></NavLink>
+          <NavLink to="/media"><Stat number={30} top="Video" bot="Clips"/></NavLink>
+          <NavLink to="https://leetcode.com/u/erikenriquez34/"><Stat number={350} top="Leetcode" bot="Solved"/></NavLink>
         </section>
 
         <section className="flex flex-col xl:flex-row items-center justify-around px-24 pt-14 mb-24 w-fit min-2xl:w-7xl">
@@ -49,17 +49,14 @@ function About() {
 
             <p className="text-left text-xl">
               I’m currently pursuing a Bachelor of Science in Computer Science at the
-              Rochester, where I’ve been exploring everything from low-level systems to high-level 
-              design.<br/><br/>
+              Rochester, where I’ve been exploring everything from low-level systems to computer theory.<br/><br/>
 
-              Outside of class, I enjoy gaming with friends (you can check out some of
-              my highlights on the site) 
-              and keeping up with the latest in tech. My academic interests lean toward GPUs and computer 
-              architecture, as it feels reasonable to understand performance from the hardware up.<br/><br/>
+              Outside of class, I enjoy gaming with friends (see Media tab) and keeping up with the latest in 
+              tech. I’m drawn to computer architecture and performance-oriented systems.<br/><br/>
 
-              When I’m not coding or gaming, I like to keep an eye on the stock market and experiment 
-              with smart home tech. Whether it’s optimizing code or my living space, I love finding 
-              practical and efficient solutions.<br/><br/>
+              For further interests, I like to keep an eye on the stock market and try out different smart
+              home technology. I enjoy finding practical solutions, whether in code or in 
+              my living space.<br/><br/>
             </p>
           </div>
           <div className="flex justify-center px-12 pt-14 w-[40%]">
